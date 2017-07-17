@@ -23,6 +23,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func didMove(to view: SKView) {
         
         self.physicsWorld.contactDelegate = self
+        self.physicsWorld.gravity = CGVector(dx: 0.0, dy: -5.0)
         
         ground = SKSpriteNode(imageNamed: "ground")
         ground.setScale(1)
@@ -93,12 +94,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             moveAndRemove = SKAction.sequence([movePipes, removePipes])
             
             bird.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
-            bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 15))
+            bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 10))
             
         }
         else{
             bird.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
-            bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 15))
+            bird.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 10))
         }
         
     }
