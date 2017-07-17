@@ -15,6 +15,8 @@
 		8E6F95391CF1C5E3005B723E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F95381CF1C5E3005B723E /* Assets.xcassets */; };
 		8E6F953C1CF1C5E3005B723E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F953A1CF1C5E3005B723E /* LaunchScreen.storyboard */; };
 		8E6F95471CF1C5E3005B723E /* FlappyBirdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F95461CF1C5E3005B723E /* FlappyBirdTests.swift */; };
+		8E6F95521CF29A39005B723E /* RandomNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F95511CF29A39005B723E /* RandomNumbers.swift */; };
+		D3964FA61F1C8ED500D17EF5 /* GameOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3964FA51F1C8ED500D17EF5 /* GameOverVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		8E6F95421CF1C5E3005B723E /* FlappyBirdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappyBirdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6F95461CF1C5E3005B723E /* FlappyBirdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlappyBirdTests.swift; sourceTree = "<group>"; };
 		8E6F95481CF1C5E3005B723E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E6F95511CF29A39005B723E /* RandomNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumbers.swift; sourceTree = "<group>"; };
+		D3964FA51F1C8ED500D17EF5 /* GameOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				8E6F95381CF1C5E3005B723E /* Assets.xcassets */,
 				8E6F953A1CF1C5E3005B723E /* LaunchScreen.storyboard */,
 				8E6F953D1CF1C5E3005B723E /* Info.plist */,
+				8E6F95511CF29A39005B723E /* RandomNumbers.swift */,
+				D3964FA51F1C8ED500D17EF5 /* GameOverVC.swift */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -153,10 +159,12 @@
 					8E6F95291CF1C5E2005B723E = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 6M9D8ZRG8L;
+						LastSwiftMigration = 0820;
 					};
 					8E6F95411CF1C5E3005B723E = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 6M9D8ZRG8L;
+						LastSwiftMigration = 0820;
 						TestTargetID = 8E6F95291CF1C5E2005B723E;
 					};
 				};
@@ -206,9 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3964FA61F1C8ED500D17EF5 /* GameOverVC.swift in Sources */,
 				8E6F95321CF1C5E3005B723E /* GameScene.swift in Sources */,
 				8E6F95341CF1C5E3005B723E /* GameViewController.swift in Sources */,
 				8E6F952E1CF1C5E3005B723E /* AppDelegate.swift in Sources */,
+				8E6F95521CF29A39005B723E /* RandomNumbers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +353,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TW.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -354,6 +365,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TW.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -366,6 +378,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TW.FlappyBirdTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlappyBird.app/FlappyBird";
 			};
 			name = Debug;
@@ -378,6 +391,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TW.FlappyBirdTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlappyBird.app/FlappyBird";
 			};
 			name = Release;
@@ -401,6 +415,7 @@
 				8E6F954D1CF1C5E3005B723E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E6F954E1CF1C5E3005B723E /* Build configuration list for PBXNativeTarget "FlappyBirdTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +424,7 @@
 				8E6F95501CF1C5E3005B723E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
